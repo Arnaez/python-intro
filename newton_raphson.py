@@ -26,4 +26,9 @@ while abs(ans**2 - k) >= epsilon:
 print('Square root of', k, 'is about', guess)
 print('This took', guesses, 'guesses in a bijection search.')
 
-print("Test", 2)
+
+def findRoot(x, power, epsilon):
+    """Assumes x and epislon int or float, power an int,
+            epislon > 0 & power >= 1
+        Returns float y such that y**power is within epsilon f x.
+        If such a float does not exist, it returns None"""
